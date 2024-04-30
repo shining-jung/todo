@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 3000;
 
 const url = 'mongodb+srv://wonny:S4XRdLC8WdkSPxK0@cluster0.zssp9co.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 //mongoDB : wonny/S4XRdLC8WdkSPxK0
