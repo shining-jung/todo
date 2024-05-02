@@ -1,11 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = 3000;
 
-const url = 'mongodb+srv://wonny:S4XRdLC8WdkSPxK0@cluster0.zssp9co.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-//mongoDB : wonny/S4XRdLC8WdkSPxK0
-//mongodb+srv://wonny:S4XRdLC8WdkSPxK0@cluster0.zssp9co.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-//npm i mongodb
+
+const url = process.env.MONGODB_URL
+
 
 const { MongoClient } = require('mongodb');
 const client = new MongoClient(url);
